@@ -12,11 +12,23 @@ body{
 header{
     font-size: 1.5rem;
 }
+#date{
+    color: #fff;
+}
 h1{
     color:white;
     background: linear-gradient(to right,#f32170,#ffeb07,#2196f3,#ff00eb,#f32170,#ffeb07);
     -webkit-text-fill-color:transparent;
     -webkit-background-clip: text;
+    font-weight: bold;
+}
+#date{
+    min-height: 20vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 15rem;
+    color:#fff;
     font-weight: bold;
 }
 header,
