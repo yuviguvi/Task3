@@ -1,3 +1,4 @@
+const dateElement=document.getElementById("date");
 const taskInput=document.querySelector(".task-input");
 const taskButton=document.querySelector(".task-button");
 const taskList=document.querySelector(".task-list");
@@ -7,6 +8,11 @@ document.addEventListener("DOMContentLoaded",getTasks);
 taskButton.addEventListener("click",addTask);
 taskList.addEventListener("click",deletecheck);
 filterOption.addEventListener("click",filterTask);
+
+//show todays date
+const options = {weekday:"long",month:"short",day:"numeric"};
+const today=new Date();
+dateElement.innerHTML=today.toLocaleDateString("en-US",options);
 
 function addTask(event){
     event.preventDefault();
