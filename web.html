@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="web.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">GOOGLE TASK</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">AboutUs</a></li>
+            <li><a href="#">ContactUs</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <h2 class="label">Login Form</h2>
+        <form class="login" action="home.html" method="post" name="form" onsubmit="return validated()">
+        <div class="font1">Email or phone</div>
+        <input autocomplete="off" type="text" name="email">
+        <div id="email_error">Please fill up your email or phone</div>
+        <div class="font2">Password</div>
+        <input type="password" name="password">
+        <div id="pass_error">Please fill up your password</div>
+        <button type="submit">Login</input>        
+        </form>
+    </div>
+    <section></section>
+    <script src="valid1.js"></script>  
+    <div class="footer">
+        <ul>
+            <li><div class="A">&copy; 2020 designed by uv</div></li>
+        </ul>
+    </div>
+</body>
+</html>    
